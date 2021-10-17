@@ -1,0 +1,66 @@
+﻿<Window x:Class="_3._10._VisorImagenesActualizado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._10._VisorImagenesActualizado"
+        mc:Ignorable="d"
+        Title="VisorImagenesActualizado" Height="550" Width="800">
+    <Window.Resources>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Width"
+                    Value="120">
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Width"
+                    Value="160">
+            </Setter>
+            <Setter Property="Height"
+                    Value="30">
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DockPanel LastChildFill="True"
+                   Margin="10">
+            <StackPanel DockPanel.Dock="Bottom"
+                        Height="100">
+
+            </StackPanel>
+            <Border DockPanel.Dock="Right"
+                    BorderThickness="3"
+                    BorderBrush="Black"
+                    CornerRadius="4">
+                <DockPanel Width="200"
+                           Background="MediumAquamarine"
+                           LastChildFill="False">
+                    <Button DockPanel.Dock="Top">Añadir Imagen</Button>
+                    <Button DockPanel.Dock="Top">Eliminar Imagen</Button>
+                    <Button DockPanel.Dock="Top">Eliminar Todas</Button>
+                    <Button DockPanel.Dock="Bottom">Recortar</Button>
+                    <Button DockPanel.Dock="Bottom">Rotar</Button>
+                </DockPanel>
+            </Border>
+
+            <TextBlock TextAlignment="Center"
+                       FontFamily="Rubik"
+                       FontSize="40"
+                       DockPanel.Dock="Top">Visor de Imágenes</TextBlock>
+
+            <WrapPanel>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+                <Image Source="assets/episodioIV.jpg"></Image>
+
+
+            </WrapPanel>
+
+        </DockPanel>
+    </Grid>
+</Window>
